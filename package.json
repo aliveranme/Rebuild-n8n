@@ -1,6 +1,7 @@
 {
   "name": "n8n-i18n-chinese",
   "private": true,
+  "packageManager": "pnpm@10.30.3",
   "scripts": {
     "i18n:translate": "node ./scripts/translate.js"
   },
