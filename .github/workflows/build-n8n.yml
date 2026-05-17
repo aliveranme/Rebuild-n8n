@@ -179,6 +179,11 @@ jobs:
         run: |
           NODE_OPTIONS="--max-old-space-size=4096" TSC_SKIP_LIB_CHECK=true node scripts/build-n8n.mjs
 
+      - name: 修复Dockerfile中/usr/local/bin路径
+        if: steps.check-n8n-exists.outputs.skip_build != 'true'
+        run: |
+          sed -i 's|/usr/local/bin/n8n|/usr/bin/n8n|g' docker/images/n8n/Dockerfile
+
       - name: 构建并推送n8n镜像
         if: steps.check-n8n-exists.outputs.skip_build != 'true'
         uses: docker/build-push-action@v5
