@@ -23,12 +23,12 @@ index 196528fd33..ee74760626 100644
 +			return 'Enterprise' as FeatureReturnType[T];
 +		}
 +
-+    	// Return unlimited for all quotas
++// Return unlimited for all quotas
 +		if (Object.values(LICENSE_QUOTAS).includes(feature as any)) {
 +			return UNLIMITED_LICENSE_QUOTA as FeatureReturnType[T];
 +		}
 +
-+    	// Return true for all boolean features
++// Return true for all boolean features
 +		return true as FeatureReturnType[T];
  	}
  
