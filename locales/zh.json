@@ -5714,7 +5714,6 @@
     "agents.builder.skills.description.label": "描述",
     "agents.builder.skills.description.placeholder": "用于会议或笔记总结",
     "agents.builder.skills.instructions.label": "指示",
-    "agents.builder.skills.instructions.characterCount": "{count} / {max} 个字符",
     "agents.builder.skills.create.title": "添加技能",
     "agents.builder.skills.create.cancel": "取消",
     "agents.builder.skills.create.save": "保存技能",
