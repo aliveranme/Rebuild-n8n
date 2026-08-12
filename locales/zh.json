@@ -1284,7 +1284,6 @@
     "agentSessions.status": "状态",
     "agentSessions.duration": "持续时间",
     "agentSessions.success": "成功",
-    "agentSessions.detail.backToSessions": "返回会话",
     "agentSessions.detail.selectMessage": "点击助手消息以查看详情",
     "agentSessions.detail.tokenUsage": "令牌用量",
     "agentSessions.detail.input": "输入",
